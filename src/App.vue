@@ -1,15 +1,26 @@
 <script setup lang="ts">
   import TheHeader from '@/layout/TheHeader.vue';
-  import TheView from '@/layout/TheView.vue'
 </script>
 
 <template>
   <div class="app-container">
     <TheHeader />
-    <TheView />
-    <RouterView />
+    <RouterView class="py-4"/>
   </div>
 </template>
+
+<style>
+@font-face {
+  font-family: 'BMHANNAAir';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/BMHANNAAir.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: 'BMHANNAAir', sans-serif !important;
+}
+
+</style>
 
 <style scoped>
 .app-container {
