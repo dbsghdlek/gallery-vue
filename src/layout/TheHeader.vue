@@ -7,18 +7,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <RouterLink class="nav-link ps-3" aria-current="page" to="/about">about</RouterLink>
-          </li>
-          <li class="nav-item">
-            <RouterLink class="nav-link ps-3" aria-current="page" to="/posts">게시글</RouterLink>
-          </li>
         </ul>
-<!--        <div class="ms-auto">-->
-<!--          <div class="align-items-center">-->
-<!--            <i class="btn bi-layout-three-columns" data-bs-toggle="offcanvas" data-bs-target="#sideBar" aria-controls="sideBar" />-->
-<!--          </div>-->
-<!--        </div>-->
       </div>
     </nav>
   </header>
