@@ -3,7 +3,7 @@
   <div class="app-container">
     <TheHeader />
     <div class="container text-center">
-      <div class="row">
+      <div class="py-4 row">
         <div class="col-6 text-center">
           <h2>소은</h2>
           <button class="btn rounded-circle" @click="$router.push('/gallery/soeun')">
@@ -18,13 +18,13 @@
         </div>
       </div>
     </div>
-    <RouterView class="py-4 p-6"/>
+    <RouterView class="ps-5 pe-5 py-4 p-6"/>
   </div>
 </template>
 <script setup lang="ts">
 import TheHeader from '@/layout/TheHeader.vue';
-import soeunImage from '../public/images/soeun.jpg'
-import naeunImage from '../public/images/naeun.jpg'
+import soeunImage from '../../public/images/soeun.jpg'
+import naeunImage from '../../public/images/naeun.jpg'
 </script>
 
 <style>
@@ -108,4 +108,5 @@ nav a:first-of-type {
     margin-top: 1rem;
   }
 }
+
 </style>

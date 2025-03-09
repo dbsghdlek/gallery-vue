@@ -1,8 +1,13 @@
 <template>
   <div class="row">
-    <a v-for="(image, index) in images" :key="index" :href="image.fileUrl" class="glightbox col-4">
-      <img :src="image.fileUrl" class="img-thumbnail" width="800" height="800"/>
-    </a>
+    <div v-for="(image, index) in images" :key="index" class="col-4">
+      <a :href="image.fileUrl" class="glightbox">
+        <img :src="image.fileUrl" class="img-thumbnail" width="800" height="800"/>
+      </a>
+      <div>
+        댓글
+      </div>
+    </div>
   </div>
 </template>
 
@@ -14,7 +19,6 @@ import axios from 'axios'
 
 
 let lightbox: ReturnType<typeof GLightbox>
-// const images = ['http://localhost:3000/resource/100.jpg', 'http://localhost:3000/resource/test.jpg']
 const images = ref([])
 
 onMounted(async () => {
@@ -41,9 +45,6 @@ watch(images, async () => {
 })
 
 onUnmounted(() => {
-  images.value.forEach(url => {
-    URL.revokeObjectURL(url)
-  })
   if (lightbox) lightbox.destroy()
 })
 </script>

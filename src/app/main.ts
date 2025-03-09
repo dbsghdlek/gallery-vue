@@ -1,7 +1,7 @@
-import globalPlugin from '@/plugins/global-plugin.ts'
-import globalComponents from '@/plugins/global-components.ts'
+import globalPlugin from '@/app/plugins/global-plugin.ts'
+import globalComponents from '@/app/plugins/global-components.ts'
 
-import App from './App.vue'
+import App from '../pages/App.vue'
 import router from './router'
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
