@@ -1,6 +1,6 @@
 <template>
   <div class="row">
-    <div v-for="(image, index) in images" :key="index" class="col-4">
+    <div v-for="(image, index) in images" :key="index" class="col-6 gallery">
       <a :href="image.fileUrl" class="glightbox">
         <img :src="image.fileUrl" class="img-thumbnail" width="800" height="800"/>
       </a>
@@ -50,11 +50,6 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
-.glightbox img {
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
-  display: block;
-  margin: auto;
-}
+
+
 </style>

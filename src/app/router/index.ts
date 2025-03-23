@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '@/features/HomeView.vue'
-import GalleryView from '@/features/GalleryView.vue'
+import HomeView from '@/pages/HomeView.vue'
+import GalleryView from '@/pages/GalleryView.vue'
+import TimeTable from '@/pages/TimeTable.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -15,6 +16,11 @@ const router = createRouter({
       name: 'gallery',
       component: GalleryView
     },
+    {
+      path: '/timetable',
+      name: 'timetable',
+      component: TimeTable
+    }
   ],
 })
 

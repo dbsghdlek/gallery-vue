@@ -7,6 +7,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item ps-3 timetable" @click="goTimetable">시간표</li>
         </ul>
       </div>
     </nav>
@@ -18,8 +19,8 @@
   import { useRouter } from 'vue-router'
   import SideBar from '@/layout/SideBar.vue'
   const router = useRouter()
-  const goPage = () => {
-    router.push('/posts/create')
+  const goTimetable = () => {
+    router.push('/timetable')
   }
 </script>
 
@@ -33,5 +34,9 @@ header * {
 }
 .sidebar{
   background-color: #d4f173;
+}
+
+.timetable{
+  cursor: pointer;
 }
 </style>
