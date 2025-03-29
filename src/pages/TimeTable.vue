@@ -112,6 +112,15 @@ watch([target, searchDay], async () => {
 })
 
 const addLog = async () => {
+
+  if(!['soeun','naeun'].includes(target.value)) {
+    alert('소은이여? 나은이여?')
+    return;
+  }
+  if(eventType.value === '1' && milk.value <= 0) {
+    alert('분유를 하나도 안먹었네!!')
+    return;
+  }
   axios.post('http://localhost:3000/babyLogs/', {
     target: target.value,
     hour: hour.value,
